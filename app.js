@@ -6,7 +6,7 @@ const routes = require('./routes')
 
 //Setting
 const app = express()
-app.set('port', process.env.PORT || 9000)
+app.set('port', process.env.PORT || 8000)
 const dboptions = {
     host     : 'localhost',
     port     : 3306,

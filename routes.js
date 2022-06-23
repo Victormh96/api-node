@@ -8,8 +8,7 @@ routes.get('/', (req, res)=> {
         conn.query('Select * From users', (err, rows)=> {
             if(err) return res.send(err)
             res.json(rows)
-            res.status(401).send('Not authorized');
-
+            res.status(401);
         })
     })
 })
